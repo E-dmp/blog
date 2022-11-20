@@ -25,7 +25,7 @@ export default function Home ({ blogs }: Props) {
             </div>
 
             <div className='p-5'>
-            <h3>{article.title}</h3>
+            <h3>{article.title.slice(0, 60) + "..."}</h3>
             </div>
             <div className="px-5 pb-2">
               {article.tag && (
